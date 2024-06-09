@@ -10,7 +10,7 @@ const Index = () => {
   const handleGenerate = () => {
     const valuesArray = inputValues.split(/\s+/).filter(Boolean);
     const formattedValues = valuesArray.map((value) => `'${value}'`).join(",");
-    setSqlInClause(`(${formattedValues})`);
+    setSqlInClause(`(${formattedValues});`);
   };
 
   return (
